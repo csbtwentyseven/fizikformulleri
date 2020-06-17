@@ -22,7 +22,7 @@ public class KinetikHesap extends AppCompatActivity {
         setContentView(R.layout.activity_kinetik_hesap);
 
         kutlegiri = findViewById(R.id.kutlegiri);
-        hizgiri = findViewById(R.id.yukseklikgiri);
+        hizgiri = findViewById(R.id.hizgiri);
         sonuc = findViewById(R.id.ciktilabel);
         dugme = findViewById(R.id.button);
 

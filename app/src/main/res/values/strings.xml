@@ -3,6 +3,7 @@
 
     <string name = "kinetik_baslik">Kinetik Enerji Hesaplayıcı</string>
     <string name="potbaslik">Potansiyel Enerji Hesaplayıcı</string>
+    <string name="momentumbaslik">Çizgisel Momentum Hesaplayıcı</string>
 
     <string name="kutle">Kütle (Kg)</string>
     <string name="hiz">Hız(Metre/Saniye)</string>

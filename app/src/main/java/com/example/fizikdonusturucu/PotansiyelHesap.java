@@ -32,7 +32,7 @@ public class PotansiyelHesap extends AppCompatActivity {
 
                 double yukseklik = Double.parseDouble(yukseklikgiri.getText().toString());
                 double kutle = Double.parseDouble(kutlegiri.getText().toString());
-                double yercekimi = Double.parseDouble(kutlegiri.getText().toString());
+                double yercekimi = Double.parseDouble(yercekimigiri.getText().toString());
                 final HesapCls hesapCls = new HesapCls(kutle,yercekimi,yukseklik);
 
                 sonuc.setText(hesapCls.getPotDeger() + " "  + getString(R.string.joule));

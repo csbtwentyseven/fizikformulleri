@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KinetikHesap">
+    tools:context=".PotansiyelHesap">
 
     <TextView
         android:id="@+id/PotansiyelBaslik"
@@ -40,30 +40,6 @@
         android:text="@string/kutle"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/kutlegiri"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/yukseklikgiri"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="232dp"
-        android:autoText="false"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PotansiyelBaslik" />
-
-    <TextView
-        android:id="@+id/yukseklikmetin"
-        android:layout_width="274dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/yukseklik"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/yukseklikgiri"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -106,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="388dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/yercekimi"
         android:textSize="20sp"
@@ -123,5 +99,29 @@
         android:inputType="number|numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yercekimimetin" />
+
+    <EditText
+        android:id="@+id/yukseklikgiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="288dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yukseklikmetin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/yukseklik"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/yukseklikgiri"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

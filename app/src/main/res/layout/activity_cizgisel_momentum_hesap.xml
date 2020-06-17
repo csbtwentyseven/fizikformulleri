@@ -6,4 +6,98 @@
     android:layout_height="match_parent"
     tools:context=".CizgiselMomentumHesap">
 
+    <TextView
+        android:id="@+id/PotansiyelBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/momentumbaslik"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kutlegiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PotansiyelBaslik" />
+
+    <TextView
+        android:id="@+id/kutlemetin"
+        android:layout_width="235dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/kutle"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/kutlegiri"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/hizgiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="288dp"
+        android:autoText="false"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PotansiyelBaslik" />
+
+    <TextView
+        android:id="@+id/hizmetin"
+        android:layout_width="274dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/hiz"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/hizgiri"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sonuclabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="484dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sonuc"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PotansiyelBaslik" />
+
+    <TextView
+        android:id="@+id/ciktilabel"
+        android:layout_width="264dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_vertical|clip_horizontal|center"
+        android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+        android:text="@string/uyari"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonuclabel" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="464dp"
+        android:text="@string/hesapla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
