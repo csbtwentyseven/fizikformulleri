@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">Fizik Donusturucu</string>
+
     <string name = "kinetik_baslik">Kinetik Enerji Hesaplayıcı</string>
-    <string name="kutle">Kütle(Kg)</string>
+    <string name="potbaslik">Potansiyel Enerji Hesaplayıcı</string>
+
+    <string name="kutle">Kütle (Kg)</string>
     <string name="hiz">Hız(Metre/Saniye)</string>
     <string name="sonuc">Sonuç:</string>
     <string name="uyari">Lütfen Tüm Değerleri Giriniz.</string>
+    <string name="yercekimi">Yer Çekimi İvmesi (G)</string>
+    <string name="yukseklik">Yükseklik (Metre)</string>
+    <string name="hesapla">Hesapla!</string>
+    <string name="joule">Joule</string>
 </resources>

@@ -2,7 +2,6 @@ package com.example.fizikdonusturucu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,11 +22,9 @@ public class KinetikHesap extends AppCompatActivity {
         setContentView(R.layout.activity_kinetik_hesap);
 
         kutlegiri = findViewById(R.id.kutlegiri);
-        hizgiri = findViewById(R.id.hizgiri);
+        hizgiri = findViewById(R.id.yukseklikgiri);
         sonuc = findViewById(R.id.ciktilabel);
         dugme = findViewById(R.id.button);
-
-
 
 
         dugme.setOnClickListener(new View.OnClickListener() {
@@ -36,9 +33,9 @@ public class KinetikHesap extends AppCompatActivity {
                 kutleDeger = Double.parseDouble(kutlegiri.getText().toString());
                 hizDeger = Double.parseDouble(hizgiri.getText().toString());
 
-                final KinHesapCls kinHesapCls = new KinHesapCls(kutleDeger,hizDeger);
+                final HesapCls hesapCls = new HesapCls(kutleDeger,hizDeger);
 
-                sonuc.setText(kinHesapCls.getKinDeger());
+                sonuc.setText(hesapCls.getKinDeger() + " " + getString(R.string.joule));
             }
         });
     }
